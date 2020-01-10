@@ -11,18 +11,17 @@ The Chemicals in Costmetics dataset reflect information that has been reported f
 
 
 The table consists of 20 columns but interested in examining the following columns:
-- CDPHId (Product ID)
-- ProductName
+- CDPHId (Product ID) 
+- ProductName 
 - CSF (Color/Scent/Flavor)
--
+- Primary Category
+- Chemical Name
+- Chemical Count
 
 **Please note that each product can be input multiple times if it has more than one scent/flavor/color or more than one chemicals
 
 ## Workflow and EDA
 - Import data to pandas data frame and clean
-- First observation
-    - total of 34908 reported products
-    - total of 584 reported companies
 
 - Determine the most reported chemical
 ![picture](img/chembypercent.png)
@@ -40,11 +39,23 @@ Yellow block refers to Titanium Dioxide. This evidently shows that Titanium Diox
 After some research on this chemical, I discovered that Titanium Dioxide is actually FDA approved. Although it is considered harmful, but there are other chemicals that are much more compared to it.  
 
 -  Next step I did was to categorize chemicals into VERY HARMFUL or not according to World Health Organization's list of 10 chemicals of major concerns even with low amount of exposure. I combined this list with Dirty Dozen ingredients investigated in Suzuki Foundation
+    - total of 2729 products contain **very harmful** chemicals out of 34908 reported products
+    - total of 244 companies reported products contain **very harmful** chemical out of 584 reported companies
 
 ![picture](img/harmfulcomp.png)
+![picture](img/harmfulprod.png)
+
 
 - Calculating ratio very harmful product to total products reported for each company
-
+![picture](img/RatioTable.png)
 ![picture](img/ratiohist.png)
+The histogram shows that there are a good number of companies that has ratio of 1. For example Mckesson Medical-Surgical only report 12 products. However, all of those 12 products contain **Very Harmful** chemicals. On the other hands, some company report ------- So I would like to find out if there is a stitiscal signifinicant difference in 2 companies
+
+
+
 ## Hypothesis Testing
 
+I would like to find out 
+**if there is a stitistical significant difference the ratio of products contain very harmful chemicals to all products reported between 2 companies**
+
+I am interested in comparing 2 companies in each test. The 2 companies are chosen based on their charateristic for example competitor companies, completely opposite company type (low end vs high end)
