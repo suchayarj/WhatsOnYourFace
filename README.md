@@ -4,7 +4,7 @@
 **Presentation Link:** https://docs.google.com/presentation/d/1WirouORE1BTJmqjE8Qd94nHhls4L0t5KmRRavSkZqW8/edit#slide=id.p 
 
 ## Motivation
-As a data scientist who loves cosmetics, I would like to utilize my skills in finding out what I have been putting on my face and what kind of chemicals I have been exposed to. I would like to further explore if one chemical is more harmful than the other and if there are any companies that have higher chance of using very harmful chemicals ingredients more than others
+As a data scientist who loves cosmetics, I would like to utilize my skills in finding out what I have been putting on my face and what kind of chemicals I have been exposed to. I would like to further explore if one chemical is more harmful than the other and if I could identify if one company has higher chance of using very harmful chemicals ingredients more than other
 
 
 ## Data
@@ -15,9 +15,9 @@ The table consists of 20 columns but interested in examining the following colum
 - CDPHId (Product ID) 
 - ProductName 
 - CSF (Color/Scent/Flavor)
+- Company Name
 - Primary Category
 - Chemical Name
-- Chemical Count
 
 **Please note that each product can be input multiple times if it has more than one scent/flavor/color or more than one chemicals
 
@@ -33,9 +33,6 @@ There were total of 122 unique chemicals. While most of the chemicals were repor
 
 ![picture](img/catcount.png)
 From the chart above, the most reported category is Makeup Products (non-permanent) and least is baby products, which makes sense since it would be very unethical to put chemicals to products for babies
-
-- Most of the products contain only 1 harmful chemicals
-![picture](img/chemcount.png)
 
 - After determining the highest reported chemical and category, I was interested to find out if *Titanium Dioxide* was also highest reported across all primary categories 
 
@@ -74,13 +71,15 @@ For example *Mckesson Medical-Surgical* only report 12 products. However, all of
 I am interested in comparing 2 companies in each test. The 2 companies are chosen based on their charateristic. For example, companies with similar sizes and products (competitors) like Anastasia Beverly Hills and Benefit, and completely opposite company types like Chanel and Amerian International Industries (high end vs low end)
 
 I would like to find out 
-**if there is a statistical significant difference the ratio of products contain very harmful chemicals to all products reported between 2 companies with 95% confidence**
+**If there is a statistical significant difference in the ratio of products contain very harmful chemicals to all products reported between 2 companies with 95% confidence? (Alpha = 0.05)**
+
+
 
 I am using Two Sample Approximate Test of Population Proportions, assuming that each product that contains **Very Harmful** ingredients is independent of the rest, and the number of products containing **Very Harmful** chemicals are Binomial distributed
     
-    H_0 : There is no statistical significant difference in the ratio of the 2 companies (P1 = P2)
+    H0 : There is no statistical significant difference in the ratio of the 2 companies (P1 = P2)
     
-    H_1 : There is a statistical significant difference in the ratio of the 2 companies (P1 != P2)
+    H1 : There is a statistical significant difference in the ratio of the 2 companies (P1 != P2)
 
 ### First Comparison: High End VS Low End
 - High End: Chanel Inc. reported 6 products contain **Very Harmful** chemical out of 88 products reported, ratio 0.068182 
@@ -88,7 +87,7 @@ I am using Two Sample Approximate Test of Population Proportions, assuming that 
 
 ![picture](img/chanelvsaii.png)
 - The calculated P-value is ~0.62, which is way over my rejection threshold. Therefore, I am failed to reject the null hypothesis. 
-- Conclusion: there's no statistical difference in the ratio of the 2 companies. Chanel and American International Industries are equally likely to have the same amount of products containing **Very Harmful** chemicals 
+- Conclusion: The difference in proportion between Chanel and American International Industries is just by randomness. Can’t rely on the ratio difference to identify which one is more harmful than the other
 
 ### Second Comparison: Competitors
 - Benefit Cosmetics reported 10 products contain harmful chemicals out of 338 products, ratio 0.029586
@@ -96,7 +95,7 @@ I am using Two Sample Approximate Test of Population Proportions, assuming that 
 
 ![picture](img/benevsanas.png)
 - The calculated P-value is ~0.75, which is, again, way over my rejection threshold. 
-- Conclusion: there's no statistical difference in the ratio of the 2 companies. The closeness in proportion is not by randomness. Benefit Cosmetics and Anastasia Beverly Hills are equally likely to have the same amount of products containing **Very Harmful** chemicals
+- Conclusion: The difference in proportion between Benefit Cosmetics and Anastasia Beverly Hills is just by randomness. Can’t rely on the ratio difference to identify which one is more harmful than the other
 
 # Future Work
 - Classify companies into categories so I can conduct a test and make a conclusion in a bigger picture rather than 2 companies at a time. For example, higher end VS lower end using their average product prices to determine and big VS small company determined by their revenues.
