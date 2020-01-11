@@ -27,31 +27,41 @@ The dataset table consists of 20 columns, but I am only interested in examining 
 
 - First question that I am eager to find out the answer is 'What is the most frequently reported chemical?'
 
-![picture](img/chembypercentage.png)
+<p align="center">
+  <img width = 1000 height = 200 src="img/chembypercentage.png">
+</p>
+
+
 There are total of 122 unique chemicals reported in this dataset. While most of the chemicals are reported less than 1%, *Titanium dioxide* comes up nearly 80% of all chemicals reported in this dataset, which is even higher than all of the other 121 chemicals combined!
 
 - What I want to find out next is the primary categories that has the highest chemicals reported. To answer this, I group the data by the product ID and primary category and plo 
 
-![picture](img/catcount.png)
+<p align="center">
+  <img src="img/catcount.png">
+</p>
+
 From the chart above, the most reported category is Makeup Products (non-permanent) and least is baby products, which makes sense since it would be very unethical to put chemicals in the products for babies
 
 - After determining the highest reported chemical and category, I am interested to find out if *Titanium Dioxide* is also highest reported chemical across all primary categories 
 
-<img src="img/chembycat.png" alt="drawing" width="500"/>
+<p align="center">
+<img src="img/chembycat.png" alt="drawing" width="450"/>
+</p>
 
 **Yellow block** in the chart above refers to *Titanium Dioxide*. This chart evidently shows that *Titanium Dioxide* is the highest reported chemical across almost every primary category. However, this triggers a question if *Titanium Dioxide* is actually very harmful or not if it's most frequently reported
 
 ### So, is Titanium Dioxide very harmful?
 After some research on *Titanium Dioxide*, I discover that Titanium Dioxide is actually FDA approved. It is also allowed to be used in food. So, my conclusion is that Titanium Dioxide is considered minimally harmful and there are many other much more harmful chemicals compared to it.  
 
--  Next step I do is categorizing chemicals into **Very Harmful** or not Very Harmful by adding a boolean column to my dataframe. I  determine **Very Harmful** chemicals by comparing the chemicals in the dataset to the **Very Harmful** chemical list I create according to World Health Organization's list of 10 chemicals of major concerns combined with Dirty Dozen Ingredients list by Suzuki Foundation (For more details on the top 10 chemicals of major concerns by WHO, please visit this link https://www.who.int/ipcs/features/chemicals_concern/en/) and for chemicals provided by Suzuki Foundation, please see *dirty-dozen.pdf*)
+-  Next step I do is categorizing chemicals into **Very Harmful** or not Very Harmful by adding a boolean column to my dataframe. I  determine **Very Harmful** chemicals by comparing the chemicals in the dataset to the **Very Harmful** chemical list I create according to World Health Organization's list of 10 chemicals of major concerns combined with Dirty Dozen Ingredients list by Suzuki Foundation (For more details on the top 10 chemicals of major concerns by WHO, please visit this link https://www.who.int/ipcs/features/chemicals_concern/en/ and for chemicals provided by Suzuki Foundation, please see *dirty-dozen.pdf*)
 
     - The major **Very Harmful** chemicals includes heavy metals like Lead, Arsenic, Mercury, and Cadmium. These chemicals can cause immediate irritation and some other affects even with low amount of exposure
     - Another chemical that I also consider as **Very Harmful** is "Trade Secret" since the companies are allowed not to disclose the ingredient information, which gives the companies' holders some sort of economic benefit. If the ingredients not very harmful, they could have disclosed the ingredients just like other companies.
 
-    
-    ![picture](img/harmfulvsveryharm.png)
-
+<p align="center">
+<img src="img/harmfulvsveryharm.png" alt="drawing">
+</p>
+  
 
     - Total of 2729 products contain **Very Harmful** chemicals out of 34908 reported products, which is approximately **7%** The number seems pretty low. However...
     - Total of 244 companies reported products contain **Very Harmful** chemical out of 584 reported companies, which is approximately **30%**, which is considered pretty high.
@@ -59,14 +69,19 @@ After some research on *Titanium Dioxide*, I discover that Titanium Dioxide is a
 
 - I, then, calculate the ratio of products containing very harmful chemical to total products reported for each company.
 
-![picture](img/ratiohist.png)
+<p align="center">
+<img src="img/ratiohist.png" alt="drawing">
+</p>
 
 The histogram above reveals that there are a good number of companies that has ratio of 1. So, I dive deeper into the table and find that there are multiple companies that only report either 1 product total or very small amount and of all those reported products contain **Very Harmful** chemical.
 
 For example, *Mckesson Medical-Surgical* only reports 12 products. However, all of those 12 products contain **Very Harmful** chemicals. On the other hands, *Farouk System Inc.* reports 262 harmful products out of 266 reported products. So, I would like to further determine if there is a statistical signifinicant in the ratio difference between 2 companies, which could be a factor in determining which company I should purchase from instead of the other.
 
-![picture](img/ratioisone.png)
-![picture](img/farouk.png)
+<p align="center">
+<img src="img/ratioisone.png" alt="drawing">
+<img src="img/farouk.png" alt="drawing">
+</p>
+
 
 
 ## Hypothesis Testing
