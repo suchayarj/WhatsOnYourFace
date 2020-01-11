@@ -56,15 +56,15 @@ After some research on *Titanium Dioxide*, I discover that Titanium Dioxide is a
 -  Next step I do is categorizing chemicals into **Very Harmful** or not Very Harmful by adding a boolean column to my dataframe. I  determine **Very Harmful** chemicals by comparing the chemicals in the dataset to the **Very Harmful** chemical list I create according to World Health Organization's list of 10 chemicals of major concerns combined with Dirty Dozen Ingredients list by Suzuki Foundation (For more details on the top 10 chemicals of major concerns by WHO, please visit this link https://www.who.int/ipcs/features/chemicals_concern/en/ and for chemicals provided by Suzuki Foundation, please see *dirty-dozen.pdf*)
 
     - The major **Very Harmful** chemicals includes heavy metals like Lead, Arsenic, Mercury, and Cadmium. These chemicals can cause immediate irritation and some other affects even with low amount of exposure
-    - Another chemical that I also consider as **Very Harmful** is "Trade Secret" since the companies are allowed not to disclose the ingredient information, which gives the companies' holders some sort of economic benefit. If the ingredients not very harmful, they could have disclosed the ingredients just like other companies.
+    - Another chemical that I also consider as **Very Harmful** is "Trade Secret" since the companies are allowed not to disclose the ingredient information, which gives the companies' holders some sort of economic benefit. If the ingredients are not very harmful, they could have disclosed the ingredients just like what other companies did.
 
 <p align="center">
 <img src="img/harmfulvsveryharm.png" alt="drawing">
 </p>
   
 
-    - Total of 2729 products contain **Very Harmful** chemicals out of 34908 reported products, which is approximately **7%** The number seems pretty low. However...
-    - Total of 244 companies reported products contain **Very Harmful** chemical out of 584 reported companies, which is approximately **30%**, which is considered pretty high.
+- Total of 2729 products contain **Very Harmful** chemicals out of 34908 reported products, which is approximately **7%** The number seems pretty low. However...
+- Total of 244 companies reported products contain **Very Harmful** chemical out of 584 reported companies, which is approximately **30%**, which is considered pretty high.
 
 
 - I, then, calculate the ratio of products containing very harmful chemical to total products reported for each company.
