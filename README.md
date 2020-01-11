@@ -37,8 +37,9 @@ From the chart above, the most reported category is Makeup Products (non-permane
 
 - After determining the highest reported chemical and category, I am interested to find out if *Titanium Dioxide* is also highest reported chemical across all primary categories 
 
-![picture](img/chembycat.png)
-     **Yellow block** in the chart above refers to *Titanium Dioxide*. This chart evidently shows that *Titanium Dioxide* is the highest reported chemical across almost every primary category. However, this triggers a question if *Titanium Dioxide* is actually very harmful or not if it's most frequently reported
+<img src="img/chembycat.png" alt="drawing" width="500"/>
+
+**Yellow block** in the chart above refers to *Titanium Dioxide*. This chart evidently shows that *Titanium Dioxide* is the highest reported chemical across almost every primary category. However, this triggers a question if *Titanium Dioxide* is actually very harmful or not if it's most frequently reported
 
 ### So, is Titanium Dioxide very harmful?
 After some research on *Titanium Dioxide*, I discover that Titanium Dioxide is actually FDA approved. It is also allowed to be used in food. So, my conclusion is that Titanium Dioxide is considered minimally harmful and there are many other much more harmful chemicals compared to it.  
@@ -97,7 +98,6 @@ I am using Two Sample Approximate Test of Population Proportions, assuming that 
 These two companies are pretty similar in sizes, revenues, and products. They both based in California, USA and beauty bloggers usually compare products from the 2 companies.
 
 ![picture](img/benevsanas.png)
-
 - The calculated P-value is ~0.75, which is, again, way over my rejection threshold. 
 - Conclusion: Again, the difference in proportion between Benefit Cosmetics and Anastasia Beverly Hills is just by randomness. I can’t rely on the ratio difference to identify which one is more harmful than the other
 
