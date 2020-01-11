@@ -4,7 +4,7 @@
 **Presentation Link:** https://docs.google.com/presentation/d/1WirouORE1BTJmqjE8Qd94nHhls4L0t5KmRRavSkZqW8/edit#slide=id.p 
 
 ## Motivation
-As a data scientist who loves cosmetics, I would like to utilize my skills in finding out what I have been putting on my face for years. I would like to further explore if one chemical is more harmful than the other and if one cosmetic company has a higher chance of using very harmful chemicals ingredients more than other
+As a data scientist who's obsessed with cosmetics, I would like to utilize my skills in finding out what I have been putting on my face for years and what kind of chemicals I have been exposed to. Specifically, my goal is to explore if one chemical is more harmful than the other and if one cosmetic company has a higher chance of using very harmful chemicals ingredients more than other
 
 
 ## Data
