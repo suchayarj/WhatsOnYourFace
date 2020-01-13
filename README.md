@@ -7,7 +7,7 @@
 As a data scientist who's obsessed with cosmetics, I would like to utilize my skills in finding out what I have been putting on my face for years and what kind of chemicals I have been exposed to. Specifically, my goal is to explore if one chemical is more harmful than the other and if one cosmetic company has a higher chance of using very harmful chemicals ingredients more than other
 
 
-## Data
+## Dataset
 The Chemicals in Cosmetics dataset reflects information that has been reported from 2009-2019 to California Safe Cosmetics Program. It includes over 100,000 inputs of cosmetics containing ingredients linked to cancer or reproductive harm reported.
 
 
@@ -23,7 +23,7 @@ The dataset table consists of 20 columns, but I am only interested in examining 
 (For more details on the dataset and columns decription, please refer to the *chemicalsincosmetic-dd.xlsx* and *chemicalsincosemetics-description.pdf*)
 
 ## Workflow and EDA
-- Import data to pandas data frame and cleaned the data, including standardizing the ProductName, CompanyName, and ChemicalName columns and 
+- Import data to pandas dataframe and cleaned the data, including standardizing the ProductName, CompanyName, and ChemicalName columns 
 
 - First question that I am eager to find out the answer is 'What is the most frequently reported chemical?'
 
