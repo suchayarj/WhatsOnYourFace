@@ -4,7 +4,7 @@
 **Presentation Link:** https://docs.google.com/presentation/d/1WirouORE1BTJmqjE8Qd94nHhls4L0t5KmRRavSkZqW8/edit#slide=id.p 
 
 ## Motivation
-As a data scientist who's obsessed with cosmetics, I would like to utilize my skills in finding out what I have been putting on my face for years and what kind of chemicals I have been exposed to. Specifically, my goal is to explore if one chemical is more harmful than the other and if one cosmetic company has a higher chance of using very harmful chemicals ingredients more than other
+As a data scientist who's obsessed with cosmetics, I would like to utilize my skills in finding out what I have been putting on my face for years and what kind of chemicals I have been exposed to. Specifically, my goal is to explore if one chemical is more harmful than the other and to identify if one cosmetic company has a higher chance of using very harmful chemicals ingredients more than the other when comparing 2 companies.
 
 
 ## Dataset
@@ -42,7 +42,7 @@ There are total of 122 unique chemicals reported in this dataset. While most of 
 
 From the chart above, the most reported category is Makeup Products (non-permanent) and the least is baby products category, which makes sense since it would be extremely unethical to put harmful chemicals in the products for babies
 
-- After determining the highest reported chemical and category, I am interested to find out if *Titanium Dioxide* is also highest reported chemical across all primary categories 
+- After determining the highest reported chemical and category, I am interested to find out if *Titanium Dioxide* is also the highest reported chemical across all primary categories 
 
 <p align="center">
 <img src="img/chembycat.png" alt="drawing" width="450"/>
@@ -53,9 +53,11 @@ From the chart above, the most reported category is Makeup Products (non-permane
 ### So, is Titanium Dioxide very harmful?
 After some research on *Titanium Dioxide*, I discover that Titanium Dioxide is actually FDA approved. It is even allowed to be used in food. So, my conclusion is that Titanium Dioxide is considered minimally harmful and there are many other much more harmful chemicals compared to it.  
 
--  Next step I do is categorizing chemicals into **Very Harmful** or not Very Harmful by adding a boolean column to my dataframe. I  determine **Very Harmful** chemicals by comparing the chemicals in the dataset to the **Very Harmful** chemical list I create according to World Health Organization's list of 10 chemicals of major concerns combined with Dirty Dozen Ingredients list by Suzuki Foundation (For more details on the top 10 chemicals of major concerns by WHO, please visit this link https://www.who.int/ipcs/features/chemicals_concern/en/ and for chemicals provided by Suzuki Foundation, please see *dirty-dozen.pdf*)
+-  Next step I do is categorizing chemicals into **Very Harmful** or not Very Harmful by adding a boolean column to my dataframe. I determine if each chemical is **Very Harmful** by comparing the chemical to the **Very Harmful** chemical list I create according to World Health Organization's list of 10 chemicals of major concerns combined with Dirty Dozen Ingredients list by Suzuki Foundation 
 
-    - The major **Very Harmful** chemicals includes heavy metals like Lead, Arsenic, Mercury, and Cadmium. These chemicals can cause immediate irritation and some other affects even with low amount of exposure
+(For more details on the top 10 chemicals of major concerns by WHO, please visit this link https://www.who.int/ipcs/features/chemicals_concern/en/ and for chemicals provided by Suzuki Foundation, please see *dirty-dozen.pdf*)
+
+    - The major **Very Harmful** chemicals includes heavy metals like Lead, Arsenic, Mercury, Cadmium, and Chromium. These chemicals can cause immediate irritation and some other affects even with low amount of exposure
     - Another chemical that I also consider as **Very Harmful** is "Trade Secret" since the companies are allowed not to disclose the ingredient information, which gives the companies' holders some sort of economic benefit. If the ingredients are not very harmful, they could have disclosed the ingredients just like what other companies did.
 
 <p align="center">
