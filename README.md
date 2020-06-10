@@ -76,7 +76,7 @@ After some research on *Titanium Dioxide*, I discover that Titanium Dioxide is a
 
 The histogram above reveals that there are a good number of companies that have ratio of 1. So, I dive deeper into the table and find that there are multiple companies that only report either 1 product total or very small amount and of all those reported products contain **Very Harmful** chemical.
 
-For example, *Mckesson Medical-Surgical* only reports 12 products. However, all of those 12 products contain **Very Harmful** chemicals. On the other hands, *Farouk System Inc.* reports 262 harmful products out of 266 reported products. So, I would like to further determine if there is a statistical signifinicant in the ratio difference between 2 companies, which could be a factor in determining which company I should purchase from instead of the other.
+For example, *Mckesson Medical-Surgical* only reports 12 products. However, all of those 12 products contain **Very Harmful** chemicals. On the other hands, *Farouk System Inc.* reports 262 products contained very harmful chemicals out of 266 reported products. So, I would like to further determine if there is a statistical signifinicant in the ratio difference between 2 companies, which could be a factor in determining which company I should purchase from instead of the other.
 
 <p align="center">
 <img src="img/ratioisone.png" alt="drawing">
