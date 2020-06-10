@@ -1,5 +1,4 @@
 # WhatsOnYourFace
-![picture](https://media.giphy.com/media/Cu87j5pPIL1hS/giphy.gif)
 
 **Presentation Link:** https://docs.google.com/presentation/d/1WirouORE1BTJmqjE8Qd94nHhls4L0t5KmRRavSkZqW8/edit#slide=id.p 
 
@@ -57,8 +56,8 @@ After some research on *Titanium Dioxide*, I discover that Titanium Dioxide is a
 
 (For more details on the top 10 chemicals of major concerns by WHO, please visit this link https://www.who.int/ipcs/features/chemicals_concern/en/ and for chemicals provided by Suzuki Foundation, please see *dirty-dozen.pdf*)
 
-    - The major **Very Harmful** chemicals includes heavy metals like Lead, Arsenic, Mercury, Cadmium, and Chromium. These chemicals can cause immediate irritation and some other affects even with low amount of exposure
-    - Another chemical that I also consider as **Very Harmful** is "Trade Secret" since the companies are allowed not to disclose the ingredient information, which gives the companies' holders some sort of economic benefit. If the ingredients are not very harmful, they could have disclosed the ingredients just like what other companies did.
+- The major **Very Harmful** chemicals includes heavy metals like Lead, Arsenic, Mercury, Cadmium, and Chromium. These chemicals can cause immediate irritation and some other affects even with low amount of exposure
+- Another chemical that I also consider as **Very Harmful** is "Trade Secret" since the companies are allowed not to disclose the ingredient information, which gives the companies' holders some sort of economic benefit. If the ingredients are not very harmful, they could have disclosed the ingredients just like what other companies did.
 
 <p align="center">
 <img src="img/harmfulvsveryharm.png" alt="drawing">
